@@ -33,8 +33,8 @@ Hints
 
 In order to process the HTML code in your script, it might be useful to use the
 [PHP Simple HTML DOM Parser](http://simplehtmldom.sourceforge.net/) class. It is
-very easy to use.
+very easy to use. Feel free to do it another way, if you prefer.
 
-Also, you might want to set the `User-Agent` header when you download the pages
+Also, you might want to set the User-Agent header when you download the pages
 from Google. Otherwise it might block you. It is best to use
 [curl](http://php.net/curl) because it makes it easy to add headers.
