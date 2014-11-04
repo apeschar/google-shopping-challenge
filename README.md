@@ -20,7 +20,7 @@ How to crawl?
 1. Make sure that the EAN number has 14 digits. If it has less than 14 digits,
    add zeroes (0) on the left.
 1. Request the search page on this URL:
-   `https://www.google.nl/search?hl=nl&output=search&tbm=shop&q=8806085553941`
+   `https://www.google.nl/search?hl=nl&output=search&tbm=shop&q=08806085553941`
 1. Find the first product link on this page. For example:
    `/shopping/product/12115883691353094589`
 1. Add `/online?hl=nl` to the end of the product link, so you get
