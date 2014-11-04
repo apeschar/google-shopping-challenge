@@ -14,6 +14,10 @@ Take a look at `test.php`. This is how your class is supposed to work:
 
 Please place your new class in the file GoogleShopping.php.
 
+Clone this repository into your own Github repository and commit your code
+there. Then, you can send me a link. If you don't know how to do this, you can
+send me a ZIP file with your code.
+
 How to crawl?
 -------------
 
