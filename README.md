@@ -9,8 +9,10 @@ Every product is uniquely identified by a 14-digit EAN number.
 
 Take a look at `test.php`. This is how your class is supposed to work:
 
-    $google = new GoogleShopping;
-    $prices = $google->getPrices('8806085553941');
+```php
+$google = new GoogleShopping;
+$prices = $google->getPrices('8806085553941');
+```
 
 Please place your new class in the file GoogleShopping.php.
 
@@ -31,6 +33,55 @@ How to crawl?
    `/shopping/product/12115883691353094589/online?hl=nl`
 1. Download the product link.
 1. Return an array with all the prices. See the example in `test.php`.
+
+Coding standards
+----------------
+
+1. Please use comments when your code is not obvious.
+1. Use variable names that make sense and are in the English language.
+1. Use whitespace to logically separate sections of code.
+1. Use functions and classes to separate functionality.
+
+```php
+<?php
+// use 4 spaces for indentation
+class Divider {
+    private $dividend;
+    private $divisor;
+
+    // place braces on the same line
+    public function setDividend($dividend) {
+        $this->dividend = $dividend;
+    }
+
+    public function setDivisor($divisor) {
+        // do not leave a space between the name of functions or control
+        // statements and the brace
+        if($divisor == 0) {
+            // use single quotes, unless the string contains escape
+            // characters or a single quote
+            throw new Exception("You can't divide by zero.");
+        }
+    }
+
+    public function getResult() {
+        // split complicated boolean conditions over multiple lines, using this
+        // exact method and alignment:
+        // - boolean operators at the beginning of each line
+        // - closing parentheses and opening brace alone on the last line
+        if(!isset($this->dividend)
+           || !isset($this->divisor)
+        ) {
+            // break long lines in a logical way
+            throw new Exception(
+                "You need to set the dividend and the divisor before dividing");
+        }
+
+        return $this->dividend / $this->divisor;
+    }
+}
+// do not use a closing ?> if the file contains only PHP
+```
 
 Hints
 -----
