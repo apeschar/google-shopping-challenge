@@ -74,7 +74,7 @@ class Divider {
         ) {
             // break long lines in a logical way
             throw new Exception(
-                "You need to set the dividend and the divisor before dividing");
+                'You need to set the dividend and the divisor before dividing.');
         }
 
         return $this->dividend / $this->divisor;
