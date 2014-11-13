@@ -80,7 +80,7 @@ class Divider {
         return $this->dividend / $this->divisor;
     }
 }
-// do not use a closing ?> if the file contains only PHP
+// do not use a closing ? > if the file contains only PHP
 ```
 
 Hints
