@@ -56,7 +56,7 @@ class Divider {
 
     public function setDivisor($divisor) {
         // do not leave a space between the name of functions or control
-        // statements and the brace
+        // statements and the parentheses
         if($divisor == 0) {
             // use single quotes, unless the string contains escape
             // characters or a single quote
